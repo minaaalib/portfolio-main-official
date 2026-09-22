@@ -2562,17 +2562,21 @@ body.cert-modal-open {
 
 .social-links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 2rem;
+    gap: 1.25rem 2rem;
+    max-width: 100%;
 }
 
 .social-links a {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    max-width: 100%;
     color: var(--text-muted);
     font-size: 0.85rem;
     font-weight: 500;
+    word-break: break-word;
     transition: color var(--transition-organic);
     position: relative;
 }
